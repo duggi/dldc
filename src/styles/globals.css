@@ -9,8 +9,12 @@
 */
 @import 'tailwindcss';
 
-
 @theme {
+  --breakpoint-sm: 48rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 75rem;
+  --breakpoint-xl: 75rem;
+  --breakpoint-2xl: 96rem;
   --color-dldc-dark-charcoal: #231f20;
   --color-dldc-slate-gray: #6a7180;
   --color-dldc-green: #1a8b39;
