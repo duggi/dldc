@@ -17,8 +17,11 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="inset-x-0 top-0 z-50" id="top">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+    <header className="w-full px-8 py-0 md:px-16" id="top">
+      <nav aria-label="Global" className="mx-auto flex
+        max-w-[var(--breakpoint-2xl)]
+        min-w-48
+        items-center justify-between p-6 lg:px-8">
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only">Your Company</span>
           <Image
