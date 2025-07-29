@@ -1,6 +1,7 @@
-@import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap';
+
 /*
-  @importing `tailwindcss`below declares the css layers and imports the node_modules css:
+  @import `tailwindcss` below declares the css layers and imports the node_modules css:
 
   @layer theme, base, components, utilities   // uses css layers, no magic
   @import './theme.css' layer(theme)          // configure tailwind and app theme
@@ -9,12 +10,61 @@
 */
 @import 'tailwindcss';
 
-@theme {
-  --breakpoint-sm: 48rem;
-  --breakpoint-md: 48rem;
-  --breakpoint-lg: 75rem;
-  --breakpoint-xl: 75rem;
-  --breakpoint-2xl: 96rem;
+@font-face {
+  font-family: 'Circular';
+  src: url('/fonts/CircularStd-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('/fonts/CircularStd-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('/fonts/CircularStd-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('/fonts/CircularStd-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('/fonts/circular-black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* defaults
+--breakpoint-sm: 40rem;       // 640
+--breakpoint-md: 48rem;       // 768
+--breakpoint-lg: 64rem;       // 1024
+--breakpoint-xl: 80rem;       // 1280
+--breakpoint-2xl: 96rem;      // 1536
+*/
+
+@theme {                      /* collapse breakpoints */
+  --breakpoint-sm:  36rem;    /* 576  */
+  --breakpoint-md:  48rem;    /* 768  */
+  --breakpoint-lg:  70rem;    /* 1120 */
+  --breakpoint-xl:  80rem;    /* 1280 */
+  --breakpoint-2xl: 92rem;    /* 1472 */
+
   --color-dldc-dark-charcoal: #231f20;
   --color-dldc-slate-gray: #6a7180;
   --color-dldc-green: #1a8b39;
@@ -26,9 +76,12 @@
   --color-dldc-very-dark-gray: #231f1f;
   --color-dldc-accent: oklch(0.7 0.3182 342);
   --color-neon-green: oklch(0.84 0.3559 145.53);
-  --font-outfit: "Outfit", "sans-serif";
-  --font-ibm-plex-sans: "IBM Plex Sans", "sans-serif";
-  --font-sans: "IBM Plex Sans", "sans-serif";
+
+  --font-ibm-plex-sans: "IBM Plex Mono", monospace;
+  --font-circular: "Circular", sans-serif;
+  --font-merriweather: "Merriweather", serif;
+  --font-sans: var(--font-circular);
+  --font-serif: var(--font-merriweather);
 }
 
 @layer base {
@@ -40,6 +93,6 @@
     background: #f9f8f7;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-ibm-plex-sans);
+    font-family: var(--font-circular);
   }
 }
