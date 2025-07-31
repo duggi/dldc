@@ -3,7 +3,7 @@ export default function MosaicGrid() {
     <>
     <section className="
       w-full
-      px-8 py-16
+      px-8 py-8
       md:px-16
     ">
       <div className="
