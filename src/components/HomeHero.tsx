@@ -67,7 +67,7 @@ export default function HomeHero() {
           </div>
 
           <blockquote className="
-            my-8 mx-auto
+            mt-8 mb-12 mx-auto
             md:pr-10
             text-center
           ">
@@ -78,12 +78,12 @@ export default function HomeHero() {
             "/>
             <p className="
               mb-1
-              font-serif text-gray-600
+              font-serif text-gray-600 text-lg
             ">
               “Make things as simple as possible, but no simpler”
             </p>
             <cite className="
-              font-serif text-sm text-gray-500
+              font-serif text-base text-gray-500
             ">
               — Theoretical Physicist
             </cite>
