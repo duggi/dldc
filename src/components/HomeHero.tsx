@@ -3,6 +3,7 @@ export default function HomeHero() {
     <>
       <section className="
         w-full
+        mt-12
         px-8 pt-8 pb-0
         md:px-16
       ">
