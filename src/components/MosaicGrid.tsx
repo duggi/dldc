@@ -6,7 +6,7 @@ export default function MosaicGrid() {
       px-8 py-8
       md:px-16
     ">
-      <div className="
+      <div id="projects-section" className="
         max-w-[var(--breakpoint-2xl)]
         min-w-48
         mx-auto

@@ -3,6 +3,7 @@ export default function HomeHero() {
     <>
       <section className="
         w-full
+        mt-12
         px-8 pt-8 pb-0
         md:px-16
       ">
@@ -46,8 +47,7 @@ export default function HomeHero() {
           order-1 md:order-2
         ">
           {/* hero copy */}
-          <div className="
-            text-center md:text-left">
+          <div className="text-center md:text-left">
             <h1 className="
               text-3xl
               font-black tracking-tight text-balance
@@ -68,7 +68,7 @@ export default function HomeHero() {
 
           <blockquote className="
             mt-8 mb-12 mx-auto
-            md:pr-10
+            pr-10 2xl:pr-16
             text-center
           ">
             <hr className="
