@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function About() {
   return (
     <>
-      <section className="
+      <section id="about-section" className="
         w-full
         px-8
         md:px-16
@@ -23,7 +23,7 @@ export default function About() {
         <div className="text-3xl/10 mt-8 mb-12">
           <p className="mb-6">I am product focused and dedicated to the craft. Products should exist to make our lives easier, more pleasant, and more productive.</p>
 
-          <p>Above all I value simplicity and aesthetics. I want to make stuff that “just works” and looks really, really good doing it.</p>
+          <p>Above all I value simplicity and aesthetics. I like making stuff that “just works” and looks really, really good doing it.</p>
         </div>
         <Link
           className="text-xl text-link"
